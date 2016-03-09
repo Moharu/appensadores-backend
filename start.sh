@@ -1,3 +1,3 @@
 #!/bin/bash
-cp .elasticsearch .esdata
+cp -r .elasticsearch/ .esdata/
 docker-compose up
