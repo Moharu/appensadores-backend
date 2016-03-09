@@ -1,0 +1,19 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "elastic": {
+    "name": "elastic",
+    "connector": "es",
+    "index": "appensadores",
+    "hosts": [
+      {
+        "protocol": "http",
+        "host": "elasticsearch",
+        "port": "9200"
+      }
+    ],
+    "apiVersion": "2.x"
+  }
+}

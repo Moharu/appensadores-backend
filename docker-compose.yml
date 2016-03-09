@@ -1,0 +1,12 @@
+api:
+  build: .
+  ports:
+   - "3000:3000"
+  volumes:
+   - .:/src
+  links:
+   - elasticsearch
+elasticsearch:
+  image: elasticsearch
+  volumes:
+   - .elasticsearch:/usr/share/elasticsearch/data/
